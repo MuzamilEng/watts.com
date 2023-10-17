@@ -3,17 +3,14 @@ import { Icon } from '@iconify/react';
 
 export const home_data = [
     {
-      title: "Watts",
-      icon: <Icon icon="ph:list-light" />,
-      bg: "images/main_bg.png",
       info: "We’re powered by our people",
       para: "Property and construction specialists working nationally to deliver increased value across all asset classes within the public and private sectors",
       services: [
-        {title: "Building Surveying", url: "/buying"},
-        {title: "Project Management", url: "/project"},
-        {title: "Cost Management", url: "/cost"},
-        {title: "Independent Monitoring", url: "/monitoring"},
-        {title: "Public Sector", url: "/public"},
+        {title: "Building Surveying", url: "/buildingSurvey"},
+        {title: "Project Management", url: "/projectManagement"},
+        {title: "Cost Management", url: "/costManagement"},
+        {title: "Independent Monitoring", url: "/independentMonitering"},
+        {title: "Public Sector", url: "/publicSector"},
       ],
       content: [
         {
@@ -45,6 +42,123 @@ export const home_data = [
     }
 ]
 
+export const building_survey = [
+    {
+        title: "Building Surveying",
+        image: "images/employee.png",
+        info: 'Our commercially aware and pragmatic advice based on insight and understanding, helps our clients make informed decisions.',
+        para:"Our nationwide professional surveying experience and technical knowledge builds trust and confidence with clients and professional partners. By doing what we do well, we help continually drive performance and value.",
+        img2: "images/people.png",
+        role: [{label: "Technical Due Diligence"}, {label: "Dilapidations and Lease Advisory"}, {label: "Neighbourly Matters"}, {label: "Contract Administration"}, {label: "Sustainability and ESG"}, {label: "Mechanical and Electrical Consultancy"}],
+        content: [
+            {
+                position: "right",
+                prtitle: "Project Title",
+                location: "Location",
+                img1: "images/building2.png",
+                img2: "images/grid5.png",
+                info: 'At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus',
+                more: "Find out more ...",
+            },
+            {
+                position: "left",
+                prtitle: "Project Title",
+                location: "Location",
+                img1: "images/building.png",
+                img2: "images/grid5.png",
+                info: 'At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus',
+                more: "Find out more ...",
+            },
+            {
+                position: "right",
+                prtitle: "Project Title",
+                location: "Location",
+                img1: "images/tower.png",
+                img2: "images/grid5.png",
+                info: 'At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus',
+                more: "Find out more ...",
+            }
+        ]
+    }
+]
+export const cost_management = [
+    {
+        title: "Building Surveying",
+        image: "images/employee.png",
+        info: 'Our commercially aware and pragmatic advice based on insight and understanding, helps our clients make informed decisions.',
+        para:"Our nationwide professional surveying experience and technical knowledge builds trust and confidence with clients and professional partners. By doing what we do well, we help continually drive performance and value.",
+        img2: "images/work.png",
+        role: [{label: "Technical Due Diligence"}, {label: "Dilapidations and Lease Advisory"}, {label: "Neighbourly Matters"}, {label: "Contract Administration"}, {label: "Sustainability and ESG"}, {label: "Mechanical and Electrical Consultancy"}],
+        content: [
+            {
+                position: "right",
+                prtitle: "Project Title",
+                location: "Location",
+                img1: "images/building2.png",
+                img2: "images/grid5.png",
+                info: 'At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus',
+                more: "Find out more ...",
+            },
+            {
+                position: "left",
+                prtitle: "Project Title",
+                location: "Location",
+                img1: "images/building.png",
+                img2: "images/grid5.png",
+                info: 'At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus',
+                more: "Find out more ...",
+            },
+            {
+                position: "right",
+                prtitle: "Project Title",
+                location: "Location",
+                img1: "images/tower.png",
+                img2: "images/grid5.png",
+                info: 'At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus',
+                more: "Find out more ...",
+            }
+        ]
+    }
+]
+export const project_management = [
+    {
+        title: "Building Surveying",
+        image: "images/employee.png",
+        info: 'Our commercially aware and pragmatic advice based on insight and understanding, helps our clients make informed decisions.',
+        para:"Our nationwide professional surveying experience and technical knowledge builds trust and confidence with clients and professional partners. By doing what we do well, we help continually drive performance and value.",
+        img2: "images/disscussion.png",
+        role: [{label: "Site Assembly"}, {label: "Team Assembly / Consultant Team Procurement"}, {label: "Multi-disciplinary Team Management"}, {label: "Feasibility Studies and Options Appraisals"}, {label: "Landlord and Tenant Lease Agreements and Works Specification"}, {label: "Procurement Strategy Developer / Contractor Procurement"}, {label: "Public Sector Framework Procurement"}, {label: "Town Planning and Condition Discharge"}, {label: "Employer’s Agent"}, {label: "Contract Administration"}, {label: "Development Management"}, {label: "Programme Management"}, {label: "Distressed Project Recovery"}, {label: "Post Project Reviews and Evaluations"}],
+        content: [
+            {
+                position: "right",
+                prtitle: "Project Title",
+                location: "Location",
+                img1: "images/building2.png",
+                img2: "images/grid5.png",
+                info: 'At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus',
+                more: "Find out more ...",
+            },
+            {
+                position: "left",
+                prtitle: "Project Title",
+                location: "Location",
+                img1: "images/building.png",
+                img2: "images/grid5.png",
+                info: 'At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus',
+                more: "Find out more ...",
+            },
+            {
+                position: "right",
+                prtitle: "Project Title",
+                location: "Location",
+                img1: "images/tower.png",
+                img2: "images/grid5.png",
+                info: 'At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus',
+                more: "Find out more ...",
+            }
+        ]
+    }
+]
 export const infos = [
     {
         label: "Project Management", bg: "black", text: "white"
@@ -158,15 +272,5 @@ export const register = [
             }
         },
         ]
-    }
-]
-
-export const building_servey = [
-    {
-        title : "Watts",
-        title2 : "Building Surveying",
-        image: "images/employee.png",
-        info: "Our commercially aware and pragmatic advice based on insight and understanding, helps our clients make informed decisions.",
-        para: "Our nationwide professional surveying experience and technical knowledge builds trust and confidence with clients and professional partners. By doing what we do well, we help continually drive performance and value.",
     }
 ]

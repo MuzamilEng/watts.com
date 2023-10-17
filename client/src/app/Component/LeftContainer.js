@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LeftContainer = ({ title, info, more, img1, img2 }) => {
+const LeftContainer = ({ title, info, more, image }) => {
     return (
         <div className=''>
             <main className='container mt-[3rem] relative h-[30rem]'>
@@ -9,7 +9,7 @@ const LeftContainer = ({ title, info, more, img1, img2 }) => {
                     <div className="flex flex-col items-center lg:max-w-[50rem] lg:h-[29rem] w-full">
                         <div className="w-[34rem] h-[22rem] top-[4rem] left-[6rem] res_img absolute lg:w-[50rem] lg:h-[30rem] z-20 overflow-hidden">
                             <img
-                                src={img1}
+                                src={image}
                                 alt="images/editorium.png"
                                 className="w-full h-full kenburns-bottom"
                             />
@@ -20,7 +20,7 @@ const LeftContainer = ({ title, info, more, img1, img2 }) => {
                         <p className='w-full max-w-[25rem] text-xl cursor-pointer lg:text-2xl text-blue-500'>{more}</p>
                     </div>
                 </div>
-                <img src={img2} alt="images/grid1.png" className='w-full z-10 absolute top-[16rem] left-0 max-w-[30rem] h-[15rem] lg:w-[43rem] lg:h-[19rem]' />
+                <img src="images/grid2.png" alt="images/grid1.png" className='w-full z-10 absolute top-[16rem] left-0 max-w-[30rem] h-[15rem] lg:w-[43rem] lg:h-[19rem]' />
                 <div className='absolute right-0 top-[8rem] transform rotate-90'>
                     <a href="/services" className='relative'>
                         <span className='text-blue-400 absolute top-3 -left-12 border-b-[1px] w-10 border-blue-400'> </span>

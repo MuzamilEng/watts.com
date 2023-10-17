@@ -1,20 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import { useAddUserMutation } from '../store/storeApi';
+import { useAddPostMutation } from '../store/storeApi';
+import { useNavigate } from 'react-router-dom';
 
 const UserForm = () => {
-    const [addUser] = useAddUserMutation();
-  // const [title, setTitle] = useState('');
-  // const [description, setDescription] = useState('');
+    const [addPost] = useAddPostMutation();
+  const navigate = useNavigate()
   const [userpost, setUserPost] = useState({ title: '', image: '', description: '' });
   const [imageURL, setImageURL] = useState(null);
 
-  const handleImageChange = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      const imageURL = URL.createObjectURL(file);
-      setImageURL(imageURL);
-    }
-  };
+    const handleImageChange = (e) => {
+      const file = e.target.files[0];
+      if (file) {
+        setUserPost({ ...userpost, image: file });
+      }
+    };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,8 +25,8 @@ const UserForm = () => {
     formData.append('image', userpost.image);
   
     try {
-      const response = await addUser(formData); // Assuming addUser expects FormData
-  
+      const response = await addPost(formData); // Assuming addUser expects FormData
+    navigate('/')
       // Handle the response if needed
       console.log('Response:', response);
   

@@ -8,13 +8,32 @@ export const storeApi = createApi({
         getUsers: builder.query({
             query: () => `/auth/login`,
         }),
-        // addUser: builder.mutation({
-        //     query: (data) => ({
-        //         url: '/products/uploads',
-        //         method: 'POST',
-        //         body: data,
-        //     }),
-        // }),
+        getPosts: builder.query({
+            query: () => `/products`,
+        }),
+        getPostsById: builder.query({
+            query: (id) => `/products/${id}`,
+          }),
+        addPost: builder.mutation({
+            query: (data) => ({
+                url: '/products',
+                method: 'POST',
+                body: data,
+            }),
+        }),
+        updatePost: builder.mutation({
+            query: ({ id, data }) => ({
+              url: `/update/${id}`,
+              method: 'PUT',
+              body: data,
+            }),
+        }),
+        deletePost: builder.mutation({
+            query: (id) => ({
+              url: `/products/${id}`,
+              method: 'DELETE',
+            }),
+          }),
         addUser: builder.mutation({
             query: (data) => ({
                 url: '/auth/register',
@@ -47,6 +66,11 @@ export const storeApi = createApi({
 
 export const {
     useGetUsersQuery,
+    useAddPostMutation,
+    useGetPostsQuery,
+    useGetPostsByIdQuery,
+    useDeletePostMutation,
+    useUpdatePostMutation,
     useAddUserMutation,
     useEditUserMutation,
     useDeleteUserMutation,

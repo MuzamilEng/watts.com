@@ -1,7 +1,4 @@
 const Products = require('../models/product');
-const express = require('express');
-const upload = require('./upload');
-const router = express.Router();
 
 const getProducts = async (req, res) => {
     try {
@@ -28,26 +25,6 @@ const getProductById = async (req, res) => {
     }
 };
 
-
-
-const addProduct = async (req, res) => {
-    try {
-        const { title, description, more } = req?.body
-  
-      const newProduct = new Products({
-        title,
-        description,
-        more,
-      });
-  
-      const savedProduct = await newProduct.save();
-  
-      res.status(201).json(savedProduct);
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ error: 'Internal Server Error' });
-    }
-  };
 
   const updateProduct = async (req, res) => {
     try {
@@ -82,7 +59,6 @@ const deleteProduct = async (req, res) => {
 
 
 module.exports = {
-    addProduct,
     getProductById,
     getProducts,
     updateProduct,
